@@ -10,23 +10,34 @@ class Solution {
             return "";
         }
 
-        $str_array = ['a','e','i','o','u','A','E','I','O','U'];
-        $temp_array = [];
+        $vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+        $chars = str_split($s);
+        $left = 0;
+        $right = strlen($s) - 1;
 
-       $key = 0;
-        for ($i = 0; $i < strlen($s); $i++) {
-            if ( in_array($s[$i], $str_array) ) {
-                $temp_array[$key]['key'] = $i;
-                $temp_array[$key]['value'] = $s[$i];
-                $key++;
+        while ($left < $right) {
+            // 找到左邊的元音字母
+            while ($left < $right && !in_array($chars[$left], $vowels)) {
+                $left++;
+            }
+            
+            // 找到右邊的元音字母
+            while ($left < $right && !in_array($chars[$right], $vowels)) {
+                $right--;
+            }
+            
+            // 交換這兩個元音字母
+            if ($left < $right) {
+                // 使用臨時變數交換
+                $temp = $chars[$left];
+                $chars[$left] = $chars[$right];
+                $chars[$right] = $temp;
+                
+                $left++;
+                $right--;
             }
         }
 
-        $keyindex = count($temp_array);
-        foreach ($temp_array as $index => $value) {
-            $s[$temp_array[$index]['key']] = $temp_array[$keyindex-1]['value'];
-            $keyindex--;
-        }
-        return $s;
+        return implode('', $chars);
     }
 }
