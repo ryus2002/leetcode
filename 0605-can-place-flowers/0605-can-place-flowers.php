@@ -7,30 +7,48 @@ class Solution {
      */
     function canPlaceFlowers($flowerbed, $n) {
 
-        $size = count($flowerbed); // 花壇的大小
-        $put = 0; // 計算可以種植的花的數量
+        if ($n == 0) {
+            return true;
+        }
+
+        $size = count($flowerbed);
+        
+        // 特殊情況：花床只有一個位置
+        if ($size == 1) {
+            return $flowerbed[0] == 0 && $n <= 1;
+        }
+
+        $put = 0;
 
         for ($i = 0; $i < $size; $i++) {
-            // 判斷是否可以種花
-            if ($flowerbed[$i] == 0) {
-                // 檢查左側和右側是否符合條件
-                $prev = ($i == 0) ? 0 : $flowerbed[$i - 1];
-                $next = ($i == $size - 1) ? 0 : $flowerbed[$i + 1];
-
-                if ($prev == 0 && $next == 0) {
-                    // 可以種花，更新花壇並計算種植數量
-                    $flowerbed[$i] = 1;
-                    $put++;
-
-                    // 如果已經種夠花，直接返回 true
-                    if ($put >= $n) {
-                        return true;
-                    }
+            // 檢查當前位置是否可以種花
+            $canPlant = false;
+            
+            // 頭部位置
+            if ($i == 0) {
+                $canPlant = $flowerbed[0] == 0 && $flowerbed[1] == 0;
+            } 
+            // 尾部位置
+            else if ($i == $size - 1) {
+                $canPlant = $flowerbed[$i] == 0 && $flowerbed[$i-1] == 0;
+            } 
+            // 中間位置
+            else {
+                $canPlant = $flowerbed[$i-1] == 0 && $flowerbed[$i] == 0 && $flowerbed[$i+1] == 0;
+            }
+            
+            // 如果可以種花，更新狀態
+            if ($canPlant) {
+                $flowerbed[$i] = 1;
+                $put++;
+                
+                // 如果已經種夠了花，提前返回
+                if ($put >= $n) {
+                    return true;
                 }
             }
         }
 
-        // 如果迴圈結束後仍無法種夠花，返回 false
         return $put >= $n;
     }
 }
