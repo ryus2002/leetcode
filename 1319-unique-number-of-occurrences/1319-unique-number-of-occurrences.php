@@ -11,26 +11,21 @@ class Solution {
 
         $size = count($arr);
         $temp_array = [];
-
-        // 計算頻率
-        foreach ($arr as $num) {
-            if (!isset($temp_array[$num])) {
-                $temp_array[$num] = 0;
-            }
-            $temp_array[$num]++;
-        }        
+        for ($i = 0; $i <= $size - 1; $i++) {
+            // $value = $arr[$i];
+            $temp_array[$arr[$i]]['count']++;
+        }
 
         $count = [];
         foreach ($temp_array as $index => $value) {
-            if ( isset( $count[$value] ) ) {
+            if ( isset( $count[$temp_array[$index]['count']] ) ) {
                 return false;
             }
             else {
-                $count[$value] = true;
+                $count[$temp_array[$index]['count']] ++;
             }
 
         }
-
-       return true;
+        return true;
     }
 }
