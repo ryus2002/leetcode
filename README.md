@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/ryus2002/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/ryus2002/leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/ryus2002/leetcode/tree/master/0035-search-insert-position) |
+| [0055-jump-game](https://github.com/ryus2002/leetcode/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/ryus2002/leetcode/tree/master/0066-plus-one) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ryus2002/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/ryus2002/leetcode/tree/master/0088-merge-sorted-array) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/ryus2002/leetcode/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/ryus2002/leetcode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ryus2002/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ryus2002/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/ryus2002/leetcode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ryus2002/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 ## Math
 |  |
