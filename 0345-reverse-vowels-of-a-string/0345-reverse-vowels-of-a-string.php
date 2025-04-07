@@ -10,39 +10,25 @@ class Solution {
             return "";
         }
 
-        $str_array = ['a','e','i','o','u','A','E','I','O','U'];
+        $vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
         $temp_array = [];
-
 
         $key = 0;
         for ($i = 0; $i < strlen($s); $i++) {
-            if ( in_array($s[$i], $str_array) ) {
+            if (in_array($s[$i], $vowels)) {
                 $temp_array[$key]['key'] = $i;
                 $temp_array[$key]['value'] = $s[$i];
                 $key++;
             }
         }
 
-        $keyindex = count($temp_array);
-        foreach ($temp_array as $index => $value) {
-            $s[$temp_array[$index]['key']] = $temp_array[$keyindex-1]['value'];
-            $keyindex--;
-            // print_r($temp_array[$index]['key']);exit;
-            // $s[$index['key']] = $temp_array[$keyindex-1]['value'];
+        $result = str_split($s);
+        $total = count($temp_array);
+        
+        for ($i = 0; $i < $total; $i++) {
+            $result[$temp_array[$i]['key']] = $temp_array[$total - 1 - $i]['value'];
         }
-        // print_r($temp_array);
-        return $s;
-
-        // $keyindex = count($temp_array);
-        // for ($j = $keyindex; $j > 0; $j--) {
-        //     echo $temp_array[$keyindex];exit;
-        //     // $s[$temp_array[$j]] = $temp_array[$keyindex]
-        // }
-        // echo $temp_array[$keyindex];exit;
-        // foreach ($temp_array as $index => $value) {
-        //     $s[$index] = $s[$keyindex - 1];
-        //     $keyindex -= 1;
-        // }
-        // print_r($s);
+        
+        return implode('', $result);
     }
 }
