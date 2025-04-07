@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/ryus2002/leetcode/tree/master/0125-valid-palindrome) |
 | [0202-happy-number](https://github.com/ryus2002/leetcode/tree/master/0202-happy-number) |
 | [0392-is-subsequence](https://github.com/ryus2002/leetcode/tree/master/0392-is-subsequence) |
+| [1894-merge-strings-alternately](https://github.com/ryus2002/leetcode/tree/master/1894-merge-strings-alternately) |
 ## Sorting
 |  |
 | ------- |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0290-word-pattern](https://github.com/ryus2002/leetcode/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/ryus2002/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/ryus2002/leetcode/tree/master/0392-is-subsequence) |
+| [1894-merge-strings-alternately](https://github.com/ryus2002/leetcode/tree/master/1894-merge-strings-alternately) |
 ## Trie
 |  |
 | ------- |
