@@ -5,25 +5,27 @@ class Solution {
      * @return Boolean
      */
     function uniqueOccurrences($arr) {
-                $freq = [];
-        
-        // 計算頻率
-        foreach ($arr as $num) {
-            if (!isset($freq[$num])) {
-                $freq[$num] = 0;
-            }
-            $freq[$num]++;
+        if (count($arr) <= 1) {
+            return false;
         }
-        
-        // 檢查頻率的唯一性
-        $occurrences = [];
-        foreach ($freq as $count) {
-            if (isset($occurrences[$count])) {
+
+        $size = count($arr);
+        $temp_array = [];
+        for ($i = 0; $i <= $size - 1; $i++) {
+            $value = $arr[$i];
+            $temp_array[$value]['count']++;
+        }
+
+        $count = [];
+        foreach ($temp_array as $index => $value) {
+            if ( isset( $count[$temp_array[$index]['count']] ) ) {
                 return false;
             }
-            $occurrences[$count] = true;
+            else {
+                $count[$temp_array[$index]['count']] ++;
+            }
+
         }
-        
         return true;
     }
 }
