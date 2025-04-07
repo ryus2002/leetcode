@@ -18,7 +18,6 @@ class Solution {
 
         $count = [];
         foreach ($temp_array as $index => $value) {
-// echo $temp_array[$index]['count'];exit;
             if ( isset( $count[$temp_array[$index]['count']] ) ) {
                 return false;
             }
