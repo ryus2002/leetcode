@@ -12,8 +12,8 @@ class Solution {
         $size = count($arr);
         $temp_array = [];
         for ($i = 0; $i <= $size - 1; $i++) {
-            $value = $arr[$i];
-            $temp_array[$value]['count']++;
+            // $value = $arr[$i];
+            $temp_array[$arr[$i]]['count']++;
         }
 
         $count = [];
