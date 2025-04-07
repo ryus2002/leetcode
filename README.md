@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ryus2002/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ryus2002/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0169-majority-element](https://github.com/ryus2002/leetcode/tree/master/0169-majority-element) |
+| [0219-contains-duplicate-ii](https://github.com/ryus2002/leetcode/tree/master/0219-contains-duplicate-ii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/ryus2002/leetcode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/ryus2002/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/ryus2002/leetcode/tree/master/0205-isomorphic-strings) |
+| [0219-contains-duplicate-ii](https://github.com/ryus2002/leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0290-word-pattern](https://github.com/ryus2002/leetcode/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/ryus2002/leetcode/tree/master/0383-ransom-note) |
 ## Divide and Conquer
@@ -84,4 +86,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/ryus2002/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Sliding Window
+|  |
+| ------- |
+| [0219-contains-duplicate-ii](https://github.com/ryus2002/leetcode/tree/master/0219-contains-duplicate-ii) |
 <!---LeetCode Topics End-->
