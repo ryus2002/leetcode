@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/ryus2002/leetcode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ryus2002/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ryus2002/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0392-is-subsequence](https://github.com/ryus2002/leetcode/tree/master/0392-is-subsequence) |
@@ -70,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/ryus2002/leetcode/tree/master/0013-roman-to-integer) |
 | [0066-plus-one](https://github.com/ryus2002/leetcode/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/ryus2002/leetcode/tree/master/0069-sqrtx) |
+| [0070-climbing-stairs](https://github.com/ryus2002/leetcode/tree/master/0070-climbing-stairs) |
 | [0202-happy-number](https://github.com/ryus2002/leetcode/tree/master/0202-happy-number) |
 ## String
 |  |
@@ -105,4 +107,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0035-search-insert-position](https://github.com/ryus2002/leetcode/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/ryus2002/leetcode/tree/master/0069-sqrtx) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/ryus2002/leetcode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
