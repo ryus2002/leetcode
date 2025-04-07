@@ -24,26 +24,18 @@ class Solution {
             $temp_array[$num]++;
         }        
 
-        // $count = [];
-        // foreach ($temp_array as $index => $value) {
-        //     if ( isset( $count[$temp_array[$value]] ) ) {
-        //         return false;
-        //     }
-        //     else {
-        //         $count[$temp_array[$value]] = true;
-        //     }
-
-        // }
-
-
-        // 檢查頻率的唯一性
-        $occurrences = [];
-        foreach ($temp_array as $count) {
-            if (isset($occurrences[$count])) {
+        $count = [];
+        foreach ($temp_array as $index => $value) {
+            if ( isset( $count[$value] ) ) {
                 return false;
             }
-            $occurrences[$count] = true;
+            else {
+                $count[$value] = true;
+            }
+
         }
+
+
         
         return true;
     }
