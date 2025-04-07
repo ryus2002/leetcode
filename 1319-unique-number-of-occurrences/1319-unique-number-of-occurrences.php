@@ -11,10 +11,6 @@ class Solution {
 
         $size = count($arr);
         $temp_array = [];
-        // for ($i = 0; $i <= $size - 1; $i++) {
-        //     // $value = $arr[$i];
-        //     $temp_array[$arr[$i]]['count']++;
-        // }
 
         // 計算頻率
         foreach ($arr as $num) {
@@ -35,8 +31,6 @@ class Solution {
 
         }
 
-
-        
-        return true;
+       return true;
     }
 }
